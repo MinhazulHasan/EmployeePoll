@@ -1,0 +1,68 @@
+.result_div {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.single_result_div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    div {
+        position: relative;
+    }
+}
+
+.result_card {
+    padding-bottom: 0;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.question_response {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result_bar_div {
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    div {
+        border-radius: 5px;
+        display: block;
+        height: 0.5rem;
+        background-color: darkcyan;
+    }
+}
+
+.vote_count {
+    padding-bottom: 0.75rem;
+    margin-left: 20px;
+    color: green;
+    font-weight: 500;
+}
+
+.summery_div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.opinion {
+    overflow-wrap: break-word;
+    background-color: #343a40;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.25rem;
+}

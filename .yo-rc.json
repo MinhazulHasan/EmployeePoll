@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "14.15.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.9.1"
+    },
+    "version": "1.17.1",
+    "libraryName": "employee-poll",
+    "libraryId": "187e129a-e0e5-4e7a-a5b9-f2aa88dd5219",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "employee-poll",
+    "solutionShortDescription": "employee-poll description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,189 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+.ui_outer {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../assets/bg-master.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.ui_container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 60rem;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.25rem;
+}
+
+.ui_container_description {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: large;
+  }
+}
+
+.question_label {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.question_textfield {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.option_div {
+  display: flex;
+}
+
+.option_textfield {
+  padding: 0.75rem;
+  border-radius: 0.3rem;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: 1px solid;
+  flex-grow: 1;
+}
+
+.option_label {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-weight: bold;
+}
+
+.delete_option_button {
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 1.5rem;
+
+  svg {
+    color: red;
+    cursor: pointer;
+  }
+}
+
+.button_div {
+  padding-top: 0.65rem;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+
+    &:first-child {
+      background-color: #343a40;
+
+      &:hover {
+        background-color: #23272b;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &:last-child {
+      background-color: rgb(28, 153, 23);
+
+      &:hover {
+        background-color: rgb(22, 122, 18);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+.create_pool_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+#create_pool {
+  background-image: url('../assets/bg-op.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card_div {
+  width: 70%;
+  background-image: url('../assets/bg-q.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.25rem 0.75rem;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  &:hover {
+    border: 3px solid skyblue;
+    transform: scale(1.02);
+    animation: overlay 0.6s;
+  }
+}
+
+.title_div {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 13px;
+  margin: 5px 20px;
+}
+
+.poll_info {
+  &:hover {
+    color: rgb(41, 153, 153);
+  }
+}
+
+.remove_poll {
+  margin-right: 20px;
+  &:hover {
+    color: rgb(206, 17, 17);
+  }
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  --text-opacity: 1;
+  color: #070a39;
+  color: rgba(7, 10, 57, var(--text-opacity));
+  text-align: center;
+  word-wrap: break-word;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
